@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Validation from './LoginValidation'
 
-export default function Login() {
+function Login() {
     const [values, setValues] = useState({
         email: '',
         password: ''
@@ -45,3 +45,4 @@ export default function Login() {
   )
 }
 
+export default Login

@@ -3,6 +3,13 @@ function Validation(values) {
     const email_pattern = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
     const password_pattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 
+    if(values.name === "") {
+        error.name = "Nimi ei tohi olla tühi"
+    }
+    else {
+        error.name = ""
+    }
+
     if(values.email === "") {
         error.email = "Email ei tohi olla tühi"
     }
